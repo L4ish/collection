@@ -4,7 +4,7 @@ import recebe = require('readline-sync')
 
 let valores: Set<number> = new Set<number>([51, 92, 17, 666, 0, 9, 3, 48, 79, 8])
 let encontrar: number 
-let posicao: any
+let posicao: boolean = true
 
 encontrar = recebe.questionInt('Insira o numero que deseja encontrar: ')
 posicao = valores.has(encontrar) // verifica se o número existe ou não
